@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { BossClock } from './countdown'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div className='flex'>
+      <img src='./bg.png' alt='' />
+      <div className='flex flex-col'>
+        <div className='flex flex-row'>
+          <img className='object-contain w-44' src='./1.png' alt='' />
+          <BossClock time='30' /> <br></br>
+        </div>
 
-export default App;
+        <div className='flex flex-row'>
+          <img className='object-contain w-44' src='./2.png' alt='' />
+          <BossClock time='30' /> <br></br>
+        </div>
+
+        <div className='flex flex-row'>
+          <img className='object-contain w-44' src='./3.png' alt='' />
+          <BossClock time='30' /> <br></br>
+        </div>
+
+        <div className='flex flex-row'>
+          <img className='object-contain w-44' src='./4.png' alt='' />
+          <BossClock time='30' /> <br></br>
+        </div>
+
+        <div className='flex flex-row'>
+          <img className='object-contain w-44' src='./5.png' alt='' />
+          <BossClock time='60' /> <br></br>
+        </div>
+
+        <div className='flex flex-row'>
+          <img className='object-contain w-44' src='./6.png' alt='' />
+          <BossClock time='60' /> <br></br>
+        </div>
+
+        <div className='flex flex-row'>
+          <img className='object-contain w-44' src='./7.png' alt='' />
+          <BossClock time='180' /> <br></br>
+        </div>
+
+        <div className='flex flex-row'>
+          <img className='object-contain w-44' src='./8.png' alt='' />
+          <BossClock time='180' /> <br></br>
+        </div>
+      </div>
+    </div>
+  )
+}
+export default App
