@@ -44,6 +44,20 @@ const App = () => {
           <img className='object-contain w-44' src='./8.png' alt='' />
           <BossClock time='180' /> <br></br>
         </div>
+
+        <div className='flex flex-row items-center'>
+          <p>Selar</p>
+          <BossClock time='30' /> <br></br>
+        </div>
+
+        <div className='flex flex-row items-center'>
+          <p>Lider 1</p>
+          <BossClock time='30' /> <br></br>
+        </div>
+        <div className='flex flex-row items-center'>
+          <p>Lider 2</p>
+          <BossClock time='60' /> <br></br>
+        </div>
       </div>
     </div>
   )
