@@ -58,6 +58,11 @@ const App = () => {
           <p>Lider 2</p>
           <BossClock time='60' /> <br></br>
         </div>
+
+        <div className='flex flex-row items-center'>
+          <p>Pedra Amarela</p>
+          <BossClock time='60' /> <br></br>
+        </div>
       </div>
     </div>
   )
