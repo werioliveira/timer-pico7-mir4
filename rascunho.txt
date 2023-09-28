@@ -1,0 +1,90 @@
+import { useState } from "react";
+import { BossClock } from "./countdown";
+
+const App = () => {
+  const [boss1, setBoss1] = useState("");
+  const [boss2, setBoss2] = useState("");
+  const [boss3, setBoss3] = useState("");
+  const [boss4, setBoss4] = useState("");
+  const [boss5, setBoss5] = useState("");
+  const [boss6, setBoss6] = useState("");
+  return (
+    <div className="flex">
+      <div className="relative">
+        <img src="./pico1.png" className="min-w-min relative" alt="" />
+
+        <button className="absolute top-[200px] left-[340px]">
+          <img
+            className="object-contain w-9 relative z-40"
+            src={`./green.png`}
+            alt=""
+          />
+          <BossClock time="30" />
+        </button>
+
+        <button className="absolute top-[270px] left-[130px]">
+          <img
+            className="object-contain w-9 relative z-40"
+            src="./green.png"
+            alt=""
+          />
+          <BossClock time="30" />
+        </button>
+        <button className="absolute top-[430px] left-[200px]">
+          <img
+            className="object-contain w-9 relative z-40"
+            src="./green.png"
+            alt=""
+          />
+          <BossClock time="30" />
+        </button>
+        <button className="absolute top-[540px] left-[600px]">
+          <img
+            className="object-contain w-9 relative z-40"
+            src="./green.png"
+            alt=""
+          />
+          <BossClock time="30" />
+        </button>
+
+        <button className="absolute top-[450px] left-[120px]">
+          <img
+            className="object-contain w-9 relative z-40"
+            src="./yellow.png"
+            alt=""
+          />
+          <BossClock time="60" />
+        </button>
+        <button className="absolute top-[260px] left-[620px]">
+          {" "}
+          <img
+            className="object-contain w-9 relative z-40"
+            src="./yellow.png"
+            alt=""
+          />
+          <BossClock time="60" />
+        </button>
+
+        <button className="absolute top-[570px] left-[150px]">
+          {" "}
+          <img
+            className="object-contain w-9 relative z-40"
+            src="./red.png"
+            alt=""
+          />
+          <BossClock time="360" />
+        </button>
+        <button className="absolute top-[110px] left-[620px]">
+          {" "}
+          <img
+            className="object-contain w-9 relative z-40"
+            src="./red.png"
+            alt=""
+          />
+          <BossClock time="360" />
+        </button>
+      </div>
+    </div>
+  );
+};
+export default App;

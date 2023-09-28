@@ -1,70 +1,41 @@
-import { BossClock } from './countdown'
-
+import { BossClock } from "./countdown";
+import { React, useEffect, useState } from "react";
 const App = () => {
   return (
-    <div className='flex'>
-      <img src='./bg.png' alt='' />
-      <div className='flex flex-col'>
-        <div className='flex flex-row'>
-          <img className='object-contain w-44' src='./1.png' alt='' />
-          <BossClock time='30' /> <br></br>
-        </div>
+    <div className="flex">
+      <div className="relative">
+        <img src="./pico.png" className="min-w-min relative" alt="" />
+        <button className="absolute top-[200px] left-[325px] ">
+          <BossClock time={30} boss={"green"} />
+        </button>
+        <button className="absolute top-[270px] left-[120px]">
+          <BossClock time={30} boss={"green"} />
+        </button>
+        <button className="absolute top-[430px] left-[200px]">
+          <BossClock time={30} boss={"green"} />
+        </button>
+        <button className="absolute top-[540px] left-[590px]">
+          <BossClock time={30} boss={"green"} />
+        </button>
 
-        <div className='flex flex-row'>
-          <img className='object-contain w-44' src='./2.png' alt='' />
-          <BossClock time='30' /> <br></br>
-        </div>
+        <button className="absolute top-[450px] left-[110px]">
+          <BossClock time={60} boss={"yellow"} />
+        </button>
+        <button className="absolute top-[260px] left-[610px]">
+          <BossClock time={60} boss={"yellow"} />
+        </button>
 
-        <div className='flex flex-row'>
-          <img className='object-contain w-44' src='./3.png' alt='' />
-          <BossClock time='30' /> <br></br>
-        </div>
-
-        <div className='flex flex-row'>
-          <img className='object-contain w-44' src='./4.png' alt='' />
-          <BossClock time='30' /> <br></br>
-        </div>
-
-        <div className='flex flex-row'>
-          <img className='object-contain w-44' src='./5.png' alt='' />
-          <BossClock time='60' /> <br></br>
-        </div>
-
-        <div className='flex flex-row'>
-          <img className='object-contain w-44' src='./6.png' alt='' />
-          <BossClock time='60' /> <br></br>
-        </div>
-
-        <div className='flex flex-row'>
-          <img className='object-contain w-44' src='./7.png' alt='' />
-          <BossClock time='180' /> <br></br>
-        </div>
-
-        <div className='flex flex-row'>
-          <img className='object-contain w-44' src='./8.png' alt='' />
-          <BossClock time='180' /> <br></br>
-        </div>
-
-        <div className='flex flex-row items-center'>
-          <p>Selar</p>
-          <BossClock time='30' /> <br></br>
-        </div>
-
-        <div className='flex flex-row items-center'>
-          <p>Lider 1</p>
-          <BossClock time='30' /> <br></br>
-        </div>
-        <div className='flex flex-row items-center'>
-          <p>Lider 2</p>
-          <BossClock time='60' /> <br></br>
-        </div>
-
-        <div className='flex flex-row items-center'>
-          <p>Pedra Amarela</p>
-          <BossClock time='60' /> <br></br>
-        </div>
+        <button className="absolute top-[570px] left-[150px]">
+          <BossClock time={360} boss={"red"} />
+        </button>
+        <button className="absolute top-[110px] left-[620px]">
+          <BossClock time={360} boss={"red"} />
+        </button>
+        <button className="absolute top-[330px] left-[340px]">
+          <BossClock time={60} boss={"pedra"} />
+        </button>
       </div>
     </div>
-  )
-}
-export default App
+  );
+};
+export default App;
