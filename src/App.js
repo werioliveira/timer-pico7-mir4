@@ -1,5 +1,4 @@
 import { BossClock } from "./countdown";
-import { Link } from "react-router-dom";
 import { React, useEffect, useState } from "react";
 const App = () => {
   return (
@@ -36,7 +35,7 @@ const App = () => {
           <BossClock time={60} boss={"pedra"} />
         </button>
       </div>
-    <h3 className="text-black text-lg">Developed by <Link to="https://www.linkedin.com/in/weri-oliveira-81054a197/">Weri Oliveira</Link></h3>
+    <h3 className="text-black text-lg">Developed by <a href="https://www.linkedin.com/in/weri-oliveira-81054a197/">Weri Oliveira</a></h3>
     </div>
   
   );
