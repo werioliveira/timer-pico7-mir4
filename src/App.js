@@ -36,8 +36,9 @@ const App = () => {
           <BossClock time={60} boss={"pedra"} />
         </button>
       </div>
+    <h3 className="text-black text-lg">Developed by <Link to="https://www.linkedin.com/in/weri-oliveira-81054a197/">Weri Oliveira</Link></h3>
     </div>
-  <h3>Developed by <Link to="https://www.linkedin.com/in/weri-oliveira-81054a197/">Weri Oliveira</Link></h3>
+  
   );
 };
 export default App;
